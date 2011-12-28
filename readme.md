@@ -1,0 +1,1 @@
+This is my code for geohello.com, a location-based, real-time chat application. It uses mongodb for the geospacial indexing. It uses nodejs and socket.io for the "real-time" functionality. The markup is served up using python and flask. I wrote this towards the end of 2010.
