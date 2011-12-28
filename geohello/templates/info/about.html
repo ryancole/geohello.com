@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div id="about">
+    <h2>Concept</h2> 
+    
+    <p>This is an <i>experimental</i> service in its' initial stages of launch.</p> 
+    
+    <p>The concept behind it is an adaptation of the citizen's band radio. CB radio was very popular back in the 70s and 80s. It provided a way
+      for people on the road to communicate with others around them at that moment in time. The strength of CB radio was that you could could communicate
+      with others around your current area in a quasi-anonymous way. At one point, the FCC was receiving more than one million CB radio broadcasting license requests
+      per month!</p> 
+      
+    <p>Citizen's band has not translated very well in to today's society, though. With the mobile devices of today, many people have forgotten about CB radio. One pitfall 
+      of today's cell phone and social networking-filled society is that you must know <i>how</i> to get in touch with another person before being able to do so. 
+      A person's cell phone number or Facebook account (etc) is the only way to send messages to them. This is a limitation that citizen's band was not faced with, though. If 
+      a person wanted to be reached, or wanted to reach others, they could use CB radio to do so. Sort of like Twitter, but location-based. What is Twitter? A way 
+      to send a message to anyone willing to listen. That's what citizen's band excelled at.</p> 
+      
+    <p>So, what is <span class="geohello">geohello</span> all about? <span class="geohello">geohello</span> aims to provide a service similar to the CB radio, but modernized. 
+      It's a way to send messages to others around your current geographical location. In theory, it should work from anywhere.</p> 
+    
+    <a name="beta" style="color: #333;"><h2>Public Beta</h2></a>
+    
+    <p>This is a beta version? Yup. This just means that this service is rapidly improving on a daily basis. You may be wondering where the mailing list submission form is, 
+      or the fancy background image. Well, we're not excluding anyone
+      during this beta period. In fact, we invite <i>everyone</i> to try out <span class="geohello">geohello</span>!</p>
+    
+    <h2>Specifics</h2> 
+    
+    <p><span class="geohello">geohello</span> limits the messages that you are able to see based on your current geographical location. It currently shows you messages 
+       within a 30 mile radius if you, using your location as center of the circle. Currently, it's a simple web-based application. It will work best on a 
+      GPS-enabled device, such as your mobile phone. It works great on my iPhone 4. It works using your home internet connection but the location reported by your browser there 
+      isn't always the most accurate thing ever.</p> 
+      
+    <p>This currently will not work with Explorer because it does no support the required geolocation functionality. This requirement is in the process of being removed, though.</p> 
+      
+    <p>I am currently going with the 30 mile radius so that more people are included because not many people will be on this at once, while it is new. My vision is for the radius to 
+      eventually be reduced down to a very small area so that the location-based aspect of this can take effect. Messages are limited to 160 characters because most cell phones 
+      max out at that amount. It's only logical to set a maximum limit and this seems to be a great reason to set it to 160. Let us know if you feel otherwise, though.</p> 
+      
+    <p>Upon initial connection to the communications stream you will be presented with any previous messages that were broadcasted in your area. This is a cool feature because 
+      it allows non-real time communication to occur, too. So, if you connect from somewhere remote you have can see other messages from others that were there in the past, if 
+      they're not there at the same time as you. You may also leave messages for others to see later. It's essentially a global forum where messages are geo-tagged and visible 
+      in real-time or from the past.</p>
+      
+    <h2>Contact</h2>
+    
+    <ul>
+      <li>Twitter: <a href="http://twitter.com/usegeohello">@useGeoHello</a>, <a href="http://twitter.com/_ryancole">@_ryancole</a></li>
+      <li>E-Mail: <a href="mailto:geohello.com@gmail.com">geohello.com@gmail.com</a></li>
+    </ul>
+  </div>
+  
+  <div id="cta">
+    <a href="{{ url_for('stream') }}">Say Hello!</a>
+  </div>
+{% endblock %}

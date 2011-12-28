@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Privacy Policy</h2>
+  <p><span class="geohello">geohello</span> allows you to communicate with the people around you in an anonymous fashion. <span class="geohello">geohello</span> does not collect any information about you other than your self-reported 
+    geopgraphical location. We store all of the messages that you transmit so that we can display the most recent messages in an area to other users in that area.</p> 
+  
+  <div id="cta">
+    <a href="{{ url_for('stream') }}">Say Hello!</a>
+  </div>
+{% endblock %}

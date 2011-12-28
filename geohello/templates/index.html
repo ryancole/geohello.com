@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Communicate with the people around you. <i>Literally</i>.</h2>
+  <p>Geohello puts you in direct communication with the people in your immediate physical location. Using your current geographical location, we're able to make sure you only see messages from other people within a short distance of you.</p>
+  
+  <h2>Sticking to the basics.</h2>
+  <p>With a strong focus on text-based messages, Geohello allows you to quickly share 160 character messages with others around you, in a simple way. Our goal is for Geohello to facilitate discussion in a particular location, potentially with people you have even yet to meet!</p>
+  
+  <h2>Nothing personal.</h2>
+  <p>Geohello is entirely anonymous. We do not force you to provide any personal information. In fact, there's no registration process - just jump right in and begin communicating.</p>
+  
+  <div id="cta">
+    <a href="{{ url_for('stream') }}">Say Hello!</a>
+  </div>
+{% endblock %}

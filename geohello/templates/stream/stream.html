@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  <link href="/static/css/stream.css" media="screen" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.min.js"></script>
+  <script type="text/javascript" src="/static/js/jquery.ba-dotimeout.min.js"></script>
+  <script type="text/javascript" src="/static/js/stream.min.js"></script>
+{% endblock %}
+
+{% block header %}
+  <div id="header">
+    <div class="mast">
+      <h1><a href="{{ url_for('index') }}">geohello</a> <span><a href="{{ url_for('about') }}#beta">beta</a></span></h1>
+      <ul id="nav" class="horizontal">
+        <li><a href="{{ url_for('stream') }}">stream</a> &bull;</li>
+        <li><a href="{{ url_for('about') }}">about</a> &bull;</li>
+        <li><a href="{{ url_for('privacy') }}">privacy</a></li>
+      </ul>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <ul id="stream">
+  </ul>
+  
+  <div id="loading">
+  </div>
+  
+  <form method="post" action="#">
+    <input type="text" placeholder="Type a message ..." name="message" id="send_message" maxlength="160" value="" />
+    <input type="submit" value="Send" />
+    
+    <input type="text" placeholder="optional nickname" name="nickname" id="send_nickname" maxlength="12" value="" />
+    <input type="text" placeholder="optional location name" name="location" id="send_location" maxlength="24" value="" />
+  </form>
+{% endblock %}

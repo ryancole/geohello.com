@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>geohello &middot; location-based messaging platform</title>
+		<link href="/static/css/index.css" media="screen" type="text/css" rel="stylesheet" />
+		{% block head %}{% endblock %}
+	</head>
+	<body>
+		{% block header %}
+		<div id="header" class="mast">
+			<h1><a href="{{ url_for('index') }}">geohello</a><span><a href="{{ url_for('about') }}#beta">beta</a></span></h1>
+			<ul id="nav" class="horizontal">
+				<li>
+					<a href="{{ url_for('stream') }}">stream</a> &bull;
+				</li>
+				<li>
+					<a href="{{ url_for('about') }}">about</a> &bull;
+				</li>
+				<li>
+					<a href="{{ url_for('privacy') }}">privacy</a>
+				</li>
+			</ul>
+		</div>
+		{% endblock %}
+		<div id="content" class="mast">
+			{% block content %}
+			{% endblock %}
+		</div>
+		<div id="footer" class="mast">
+			<ul class="horizontal">
+				<li>
+					<a href="{{ url_for('stream') }}">stream</a>
+				</li>
+				<li>
+					<a href="{{ url_for('about') }}">about</a>
+				</li>
+				<li>
+					<a href="{{ url_for('privacy') }}">privacy</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+html, body {
+  background-color: #FAFAFA;
+  color: #222;
+  font-family: 'Myriad Pro', 'Droid Serif', Georgia, serif;
+  height: 100%;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+li span {
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+}

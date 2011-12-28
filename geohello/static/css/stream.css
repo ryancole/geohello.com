@@ -1,0 +1,58 @@
+form {
+  margin: 0 auto;
+  width: 80%;
+}
+
+form input[type="text"] {
+  font-size: 1.3em;
+  padding: 4px;
+  width: 68%;
+}
+
+form input[type="submit"] {
+  font-size: 1.3em;
+  padding: 4px;
+  width: 28%;
+}
+
+#header {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+}
+
+#stream {
+  margin-top: 100px;
+  word-wrap: break-word;
+}
+
+#stream li {
+  margin-bottom: 30px;
+  list-style-type: none;
+}
+
+#loading {
+  background: url(/static/img/loading.gif) no-repeat;
+  height: 16px;
+  width: 16px;
+  margin: 20px auto;
+  padding: 0;
+}
+
+#send_nickname, #send_location {
+  width: 47%;
+}
+
+.uid {
+  font-family: "league-gothic-1","league-gothic-2";
+  font-size: 1.1em;
+}
+
+.arrow {
+  display: inline-block;
+  margin: 0px 0px 0px 5px;
+  width: 10px;
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
